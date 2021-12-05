@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Development website</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo">
+        GoWebly Dev
+      </a>
+
+      <nav class="navbar">
+        <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a>
+        <a data-aos="zoom-in-left" data-aos-delay="450" href="#about"
+          >about us</a
+        >
+
+        <a data-aos="zoom-in-left" data-aos-delay="750" href="#services"
+          >services</a
+        >
+        <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery"
+          >our projects</a
+        >
+      </nav>
+
+      <div class="box">
+        <div>
+          <input
+            type="search"
+            placeholder="Search"
+            id="search-data"
+            class="btn"
+          />
+          <button
+            type="submit"
+            id="submit-search-data"
+            class="submit-search-data btn"
+            onclick="searchData()"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <span data-aos="fade-up" data-aos-delay="150">GoWebly development</span>
+        <h3 data-aos="fade-up" data-aos-delay="300">
+          Develop the digital side of your micro business!
+        </h3>
+        <p data-aos="fade-up" data-aos-delay="450"></p>
+        <a
+          data-aos="zoom-in-left"
+          data-aos-delay="1300"
+          href="#book-form"
+          class="btn"
+          onclick
+          >book now</a
+        >
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- booking form section starts  -->
+
+    <section class="book-form" id="book-form">
+      <form action="" id="form">
+        <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
+          <span>Your name</span>
+          <input type="text" id="name" placeholder="place name" value="" />
+        </div>
+
+        <div data-aos="zoom-in" data-aos-delay="300" class="inputBox">
+          <span>Apointment</span>
+          <input type="date" value="" id="date" />
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
+          <span>How many projects?</span>
+          <input
+            type="number"
+            placeholder="number of projects"
+            value=""
+            id="number"
+            required
+          />
+        </div>
+        <input
+          data-aos="zoom-in"
+          data-aos-delay="600"
+          type="submit"
+          value="Send"
+          class="btn"
+        />
+      </form>
+    </section>
+
+    <!-- booking form section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+        <img
+          src="images/photo-1581472723648-909f4851d4ae.jpg"
+          muted
+          autoplay
+          loop
+          class="video"
+        />
+        <div class="controls">
+          <span
+            class="control-btn"
+            data-src="images/photo-1581472723648-909f4851d4ae.jpg"
+          ></span>
+          <span class="control-btn" data-src="images/ph1.jpg"></span>
+          <span class="control-btn" data-src="images/go3.jpg"></span>
+        </div>
+      </div>
+
+      <div class="content" data-aos="fade-left" data-aos-delay="600">
+        <span>why choose us?</span>
+        <h3>a start-up company inspired by minimalism</h3>
+        <p>
+          Every beginning is difficult, we know that too. That is why we are
+          here for you, if you are in the same problem. Let us design your
+          website and enjoy the changes that are happening around you.
+        </p>
+        <a
+          href="https://sr.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D1%80%D1%82-%D0%B0%D0%BF_%D0%BF%D1%80%D0%B5%D0%B4%D1%83%D0%B7%D0%B5%D1%9B%D0%B5"
+          class="btn"
+          >read more</a
+        >
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- services section starts  -->
+
+    <section class="services" id="services">
+      <div class="heading">
+        <span>our services</span>
+        <h1>creativity is on our side</h1>
+      </div>
+
+      <div class="box-container">
+        <div
+          class="box"
+          data-aos="zoom-in-up"
+          data-target="web development"
+          data-aos-delay="150"
+        >
+          <i class="fas fa-laptop-code"></i>
+          <h3>web development</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+            cumque.
+          </p>
+        </div>
+
+        <div
+          class="box"
+          data-aos="zoom-in-up"
+          data-target="design"
+          data-aos-delay="300"
+        >
+          <i class="fab fa-slack"></i>
+          <h3>logo design</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+            cumque.
+          </p>
+        </div>
+
+        <div
+          class="box"
+          data-aos="zoom-in-up"
+          data-target="design"
+          data-aos-delay="450"
+        >
+          <i class="fas fa-paint-brush"></i>
+          <h3>web design</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+            cumque.
+          </p>
+        </div>
+
+        <div
+          class="box"
+          data-aos="zoom-in-up"
+          data-target="instagram"
+          data-aos-delay="600"
+        >
+          <i class="fab fa-instagram"></i>
+          <h3>Instagram Posts</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+            cumque.
+          </p>
+        </div>
+
+        <div
+          class="box"
+          data-aos="zoom-in-up"
+          data-target="quality assurance"
+          data-aos-delay="750"
+        >
+          <i class="fas fa-comments"></i>
+          <h3>Quality assurance</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+            cumque.
+          </p>
+        </div>
+
+        <div
+          class="box"
+          data-aos="zoom-in-up"
+          data-target="domain"
+          data-aos-delay="900"
+        >
+          <i class="fas fa-align-center"></i>
+          <h3>domain purchase</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+            cumque.
+          </p>
+        </div>
+      </div>
+
+      <div class="list" data-aos="fade-up" data-aos-delay="600">
+        <div id="banner-id" class="banner">
+          <h1><span class="styling">Services </span>List</h1>
+          <p>
+            Let us know which of our services you need. Fill in the field and
+            contact us! We are here for you. Your Go Webly Development.
+          </p>
+          <div class="input_div">
+            <input
+              type="text"
+              class="input"
+              placeholder="What you choose?"
+              id=""
+            />
+            <button class="addButton"><i class="fas fa-plus"></i></button>
+          </div>
+          <div class="container">
+            <!--<div class="item">
+        <input type="text" class="item_input" value="sport" disabled />
+        <button class="editButton">Edit</button>
+        <button class="removeButton">Remove</button>
+        <button class="saveButton" type="save">Save</button>
+      </div>
+      --->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+      <div class="heading">
+        <span> gallery</span>
+        <h1>our projects</h1>
+      </div>
+
+      <div class="box-container">
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+          <img
+            src="images/photo-1511376777868-611b54f68947.jpg"
+            alt="javascript"
+          />
+          <span>javascript</span>
+          <h3>DigitalGo</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+          <img src="images/ccc.jpg" alt="HTML" />
+          <span>HTML</span>
+          <h3>WebOptional</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+          <img src="images/bbb.jpg" alt="CSS" />
+          <span>CSS</span>
+          <h3>Color Changer</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+          <img src="images/go2.jpg" alt="Bootstrap" />
+          <span>Bootstrap</span>
+          <h3>Portofolio website</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+          <img src="images/go3.jpg" alt="SAAS" />
+          <span>SAAS</span>
+          <h3>Redesign web</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+          <img src="images/fff.jpg" alt="Phyton" />
+          <span>Phyton</span>
+          <h3>Math class</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+          <img src="images/photo-1517148815978-75f6acaaf32c.jpg" alt="React" />
+          <span>React</span>
+          <h3>AI tech</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+          <img src="images/go1.jpg" alt="React Native" />
+          <span>React Native</span>
+          <h3>GoWebly</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+          <img src="images/ccc.jpg" alt="Next.js" />
+          <span>Next.js</span>
+          <h3>Server side</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review">
+      <div class="content">
+        <span>testimonials</span>
+        <h3>good news from our clients</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          laudantium corporis fugiat quae unde perspiciatis similique ab modi
+          enim consequatur aperiam cumque distinctio facilis sit, debitis
+          possimus asperiores non harum.
+        </p>
+      </div>
+
+      <div class="box-container" data-aos="fade-left" data-aos-delay="600">
+        <div class="box">
+          <p>Great expirience and successful worker!</p>
+          <div class="user">
+            <img src="images/pic-1.png" alt="" />
+            <div class="info">
+              <h3>Malik Muhad</h3>
+              <span>Israel</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p>
+            great team all recommendations for the gowebly team, so much effort
+            invested
+          </p>
+          <div class="user">
+            <img src="images/pic-2.png" alt="" />
+            <div class="info">
+              <h3>Maria Sao Miquel</h3>
+              <span>Mexico</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p>every cast for the team</p>
+          <div class="user">
+            <img src="images/pic-3.png" alt="" />
+            <div class="info">
+              <h3>Marco Saiunragge</h3>
+              <span>The Netherland</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p>every cast for the team</p>
+          <div class="user">
+            <img src="images/pic-4.png" alt="" />
+            <div class="info">
+              <h3>Helena Sou</h3>
+              <span>Taiwan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- banner section starts  -->
+
+    <div id="banner-id" class="banner">
+      <div class="content" data-aos="zoom-in-up" data-aos-delay="300">
+        <span>start your adventures</span>
+        <h3>Let's Explore This World</h3>
+        <p>
+          Our concern is to create a good website for our users around the
+          world. If you also need a website, feel free to contact us. Our
+          availability is 24/7 for clients.
+        </p>
+        <a href="" type="submit" class="btn">Enroll now</a>
+      </div>
+    </div>
+
+    <!-- banner section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <a href="#" class="logo"> GoWebly </a>
+          <p>Develop the digital side of your micro business!</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#home" class="links">
+            <i class="fas fa-arrow-right"></i> home
+          </a>
+          <a href="#about" class="links">
+            <i class="fas fa-arrow-right"></i> about
+          </a>
+
+          <a href="#services" class="links">
+            <i class="fas fa-arrow-right"></i> services
+          </a>
+          <a href="#gallery" class="links">
+            <i class="fas fa-arrow-right"></i> projects
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <p><i class="fas fa-map"></i> bosnia and herzegovina</p>
+          <p><i class="fas fa-phone"></i> +3875585859</p>
+          <p><i class="fas fa-envelope"></i> gowebly.dev@gmail.com</p>
+          <p><i class="fas fa-clock"></i> 8:00am - 16:00pm</p>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <form action="" id="form-news">
+            <input
+              type="email"
+              name=""
+              placeholder="enter your email"
+              class="email"
+              id="email"
+            />
+            <input type="submit" value="subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 150,
+      });
+    </script>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
